@@ -3,6 +3,7 @@ package com.oop.entity;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -17,6 +18,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Plan {
+	@Id
 	private Long planId;
 	private String planName;
 	private String planStatus;
